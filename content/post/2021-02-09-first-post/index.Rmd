@@ -1,0 +1,45 @@
+---
+title: Hello, world!
+author: Libby Mohr
+date: '2021-02-09'
+slug: first-post
+categories: []
+tags:
+  - Blogdown
+  - Netlify
+subtitle: ''
+summary: 'Welcome to my new site!'
+authors: []
+lastmod: '2021-02-09T19:59:31-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+# Welcome to my site! 
+
+As a newbie to the world of website architecture, I figured it was appropriate to begin this blog with a common coding sanity-check. 
+
+> ## **Hello World!**
+
+Ok, I think it's working.
+
+## Purpose
+I'm hoping this site will provide:
+
+- A platform to share and document things I'm working on and learning about, for my future self and for anyone else who happens to stumble upon it. 
+- A means for past, present, and future collaborators and employers to learn more about me and my work.
+- A way to practice communicating my professional work and fun side projects.
+- An excuse to experiment and play with static website development.
+
+## How I created this site
+I created this site using the R package [blogdown](https://github.com/rstudio/blogdown), which uses Hugo and R Markdown to build websites. The [blogdown documentation](https://bookdown.org/yihui/blogdown/) has proved quite useful and is actively being updated. Additionally, I've found the [Wowchemy Documentation](https://wowchemy.com/docs/) and [Markdown syntax guide](https://www.markdownguide.org/basic-syntax/#lists-1) to be handy resources. Finally, I've learned quite a bit by simply experimenting.
+
+
+
+
+
+

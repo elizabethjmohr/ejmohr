@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libby Mohr</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>Libby Mohr</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 09 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Libby Mohr</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Biogeochemical Network Modeling</title>
+      <link>/project/bgcnetwork/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/project/bgcnetwork/</guid>
+      <description>
+
+
+&lt;p&gt;In freshwater ecosystems, biotic cycling of carbon and nutrients determines the capacity of a waterbody to maintain high water quality. Yet scientists and managers lack a robust theory to predict rates of carbon and nutrient transformation to inform water quality management decisions. I am developing simulation models that aim to efficiently and realistically represent the cycling of chemical elements in aquatic ecosystems. Rather than focusing on the cycling of a single element (e.g. carbon, nitrogen), I aim to model cycling of multiple elements simultaneously by leveraging linkages among elemental cycles. Such linkages can be conceptualized as a biogeochemical network, where the “flow” of elements through the network is governed by first principles like mass and energy balance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Caddisflies as Ecosystem Engineers</title>
+      <link>/project/caddis/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/project/caddis/</guid>
+      <description>&lt;p&gt;Net-spinning caddisfly (Hydropsychidae) larvae are ecosystem engineers whose nets can both alter streambed hydrologic properties and create a novel habitat for microbial communities (MacDonald et al., 2020). Streambed hydrologic exchange and microbial biofilms both influence processing of organic matter and nutrients, so might the net-spinning activities of caddisflies provide an indirect control on water quality? I am working on a team of &lt;a href=&#34;https://hydroecology.weebly.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Poole&lt;/a&gt; and &lt;a href=&#34;https://www.montana.edu/alindsey/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Albertson&lt;/a&gt; lab members to find out. Read more about the project &lt;a href=&#34;https://www.montana.edu/news/19665/montana-state-researchers-earn-national-science-foundation-grant-to-study-caddisflies-and-stream-health&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-adult-caddisfly&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;/project/caddis/featured_hue6c20050f640c78ded6446d9bb8c795f_541072_2000x2000_fit_q75_lanczos.jpg&#34; data-caption=&#34;Adult Caddisfly&#34;&gt;
+
+
+  &lt;img data-src=&#34;/project/caddis/featured_hue6c20050f640c78ded6446d9bb8c795f_541072_2000x2000_fit_q75_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1280&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    Adult Caddisfly
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
+&lt;p&gt;MacDonald, MJ, Albertson, LK, Poole, GC. Ecosystem engineering in the streambed: Net‐spinning caddisflies influence hydraulic properties. &lt;em&gt;Ecohydrology&lt;/em&gt;. 2020;e2266. &lt;a href=&#34;https://doi.org/10.1002/eco.2266&#34;&gt;https://doi.org/10.1002/eco.2266&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello, world!</title>
+      <link>/post/first-post/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/post/first-post/</guid>
+      <description>
+
+
+&lt;div id=&#34;welcome-to-my-site&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Welcome to my site!&lt;/h1&gt;
+&lt;p&gt;As a newbie to the world of website architecture, I figured it was appropriate to begin this blog with a common coding sanity-check.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;&lt;strong&gt;Hello World!&lt;/strong&gt;&lt;/h2&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ok, I think it’s working.&lt;/p&gt;
+&lt;div id=&#34;purpose&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Purpose&lt;/h2&gt;
+&lt;p&gt;I’m hoping this site will provide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A platform to share and document things I’m working on and learning about, for my future self and for anyone else who happens to stumble upon it.&lt;/li&gt;
+&lt;li&gt;A means for past, present, and future collaborators and employers to learn more about me and my work.&lt;/li&gt;
+&lt;li&gt;A way to practice communicating my professional work and fun side projects.&lt;/li&gt;
+&lt;li&gt;An excuse to experiment and play with static website development.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-i-created-this-site&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;How I created this site&lt;/h2&gt;
+&lt;p&gt;I created this site using the R package &lt;a href=&#34;https://github.com/rstudio/blogdown&#34;&gt;blogdown&lt;/a&gt;, which uses Hugo and R Markdown to build websites. The &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34;&gt;blogdown documentation&lt;/a&gt; has proved quite useful and is actively being updated. Additionally, I’ve found the &lt;a href=&#34;https://wowchemy.com/docs/&#34;&gt;Wowchemy Documentation&lt;/a&gt; and &lt;a href=&#34;https://www.markdownguide.org/basic-syntax/#lists-1&#34;&gt;Markdown syntax guide&lt;/a&gt; to be handy resources. Finally, I’ve learned quite a bit by simply experimenting.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hyporheic Biogeochemistry</title>
+      <link>/project/hyporheicbgc/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>/project/hyporheicbgc/</guid>
+      <description>&lt;p&gt;Hyporheic zones (areas along and below the streambed that exchange water with the stream channel) provide habitats for microorganisms and host chemical gradients that together spur a variety of chemical reactions. The chemical composition of water that enters the hyporheic zone is thus altered as it travels along underground flowpaths before exiting the hyporheic zone and returning to the channel. Hyporheic zone ecology thus serves as a major influence on both the downstream export of carbon and nutrients and the release of greenhouse gases to the atmosphere. The influence of hyporheic zone biogeochemical dynamics on stream channel chemistry depends on both the rate of hyporheic exchange and the nature and rate of chemical reactions in the hyporheic zone. Collaborating with my fellow members of the &lt;a href=&#34;https://hydroecology.weebly.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fluvial Landscape Lab&lt;/a&gt; at Montana State University, I am working to build conceptual, mathematical, and simulation models that represent the impact of hyporheic exchange on stream solute dynamics.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
