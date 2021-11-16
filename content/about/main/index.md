@@ -1,17 +1,16 @@
 ---
 ## Configure page content in wide column
-title: "Why apéro?" # leave blank to exclude
-number_featured: 1 # pulling from mainSections in config.toml
+title: "My background" # leave blank to exclude
+number_featured: 2 # pulling from mainSections in config.toml
 use_featured: false # if false, use most recent by date
-number_categories: 3 # set to zero to exclude
+number_categories: 0 # set to zero to exclude
 show_intro: true
-intro: |
-  Apéro is a unique kind of casual get-together in French culture, when you gather with friends and get to know each other better over some apéritifs, snacks, and anything in between. A good apéro is one where you'd happily spend a few hours just hanging out.
+intro: 
+  I grew up in Chicagoland and attended college at Washington University in St. Louis, graduating in 2015 with majors in Chemical Engineering and Environmental Earth Science. Upon graduation, I had a sincere desire to apply my strong quantitative skills toward combating climate change and other environmental challenges. After an enjoyable 7-month  stint working on an organic vegetable farm, I landed an Americorps position serving with the national non-profit Trout Unlimited.  There, I monitored water quantity and quality and worked on a variety of stream restoration projects. Eventually I got curious enough to attend graduate school in stream ecology, where my interest in freshwater science remained and my budding passion for data science grew.
   
-  I hope this theme helps you create your own virtual apéro. A place where you and your site's visitors enjoy spending time, and one that helps folks get to know you better. 
 show_outro: true
 outro: |
-  <i class="fas fa-glass-cheers pr2"></i>Sincere thanks to [Maëlle Salmon](https://masalmon.eu/) for her help naming this Hugo theme!
+  <i class="fas fa-hiking"></i> Thanks for visiting my site!
 ---
 
 ** index doesn't contain a body, just front matter above.

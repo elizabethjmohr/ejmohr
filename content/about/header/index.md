@@ -3,10 +3,9 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hi, my name is Hugo Apéro. Nice to meet you.
+  Welcome!
 ---
 
 <!-- this is a subheadline -->
-I'm a Hugo theme you'll want to hang out with. :fr: 
+I'm a Ph.D. candidate at Montana State University studying biogeochemical cycling in streams and rivers. My dissertation research is focused on understanding controls on network-scale nutrient cycling by linking empirical data with models of water movement and biogeochemical cycling.
 
-The page you are reading is based on a markdown file- look in `content/about/` to edit. There, look inside the `header`, `main`, and `sidebar` folders to get started building your own "about" page.
