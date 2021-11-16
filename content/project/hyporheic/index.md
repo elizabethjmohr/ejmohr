@@ -1,7 +1,7 @@
 ---
 author: Libby Mohr
 categories:
-date: "2021-11-17"
+date: "2021-11-15"
 draft: false
 excerpt: What is hyporheic exchange, anyway? 
 layout: single
