@@ -9,11 +9,11 @@ links:
 - icon: github
   icon_pack: fab
   name: code
-  url: https://github.com/elizabethjmohr/eBird
+  url: https://github.com/elizabethjmohr/birds
 subtitle: 
 tags:
 - hugo-site
 title: Birds of Prey of Madison
 ---
 
-<iframe src="map.html"> </iframe>
+<iframe src="map.html" width = "100%" height = "400"> </iframe>
