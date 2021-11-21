@@ -46,14 +46,16 @@ It's worth noting that the text-mining method I used is imperfect. For example, 
 
 Nonetheless, the results made me curious to know: 
 
->**Does using each of popular flavorings give the bakers an advantage?**
+>**Does using each of popular flavorings either hurt or help the bakers?**
 
 We can think about this question in two ways. I'll use chocolate as an example to make this simpler, but the same questions could be asked for each ingredient: 
 
-1. Is the risk of getting eliminated *lower* if the baker uses chocolate in either their signature bake? 
+1. Is the risk of getting eliminated *lower* if the baker uses chocolate in either their signature or showstopper bake? 
 2. Is the chance of getting star baker *higher* if the baker uses chocolate in either of their bakes? 
 
-To visualize the answers to question #1, I calculated a "risk ratio". In short, I first calculated the risk of being eliminated when using chocolate as the total number of times that a baker used chocolate and was eliminated divided by the total number of times a baker used chocolate in an episode, regardless of elimination status. I then divided this risk by the overall risk of getting eliminated, regardless of chocolate use. Values greater than 1 indicate that bakers are were *more* likely to be eliminated if they used chocolate, whereas values less than 1 indicate that they are *less* likely to be eliminated if they used chocolate. Here's what I found for all the ingredients. 
+To visualize the answers to question #1, I calculated a "risk ratio". In short, I first calculated the risk of being eliminated when using chocolate as the total number of times that a baker used chocolate and was eliminated divided by the total number of times a baker used chocolate in an episode, regardless of elimination status. I then divided this risk by the risk of getting eliminated when *not* using chocolate. Values greater than 1 indicate that bakers are were *more* likely to be eliminated if they used chocolate, whereas values less than 1 indicate that they are *less* likely to be eliminated if they used chocolate. Here's what I found for all the ingredients. 
+
+Similarly, to address question #2, I calculated a "reward ratio".
 
 ```{r, echo = FALSE}
 htmltools::tags$iframe(
