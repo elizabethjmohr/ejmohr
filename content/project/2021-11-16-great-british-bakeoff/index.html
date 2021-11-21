@@ -3,7 +3,7 @@ author: Libby Mohr
 categories:
 date: "2021-11-15"
 draft: false
-excerpt: Analysis and visualization of Great British Bake-off data
+excerpt: How to win the Great-British bakeoff
 layout: single
 links:
 - icon: github
@@ -19,12 +19,29 @@ title: Great British Bake-off
 <script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
-<pre class="r"><code>htmltools::tags$iframe(
-  src = &quot;test.html&quot;,
-  scrolling = &quot;no&quot;, 
-  seamless = &quot;seamless&quot;, 
-  frameBorder = &quot;0&quot;,
-  width = &quot;100%&quot;,
-  height = &quot;300&quot;
-)</code></pre>
-<p><iframe src="test.html" scrolling="no" seamless="seamless" frameBorder="0" width="100%" height="300"></iframe></p>
+<p>As someone who doesn’t care much for cake or reality-television, I was admittedly skeptical when friends raved about the Great British Bake Off. When I watched it, though, I found it hard not be taken by the quirky British humor, the camaraderie among bakers, and the shared struggle to make some complicated baked good in some ridiculously-short time period. Needless to say I was delighted when I stumbled upon the <a href="https://bakeoff.netlify.app/index.html">bakeoff</a> package, which enables easy access to some of the show’s data from R.</p>
+<p>The first question I sought to answer was:</p>
+<blockquote>
+<p><strong>What are the most commonly-used flavorings in the signature and showstopper bakes?</strong></p>
+</blockquote>
+<p>To answer this question, I determined which words appeared most commonly in the titles of signature and showstopper bakes from all 10 seasons of the show. I then excluded words that didn’t pertain to flavor: common words like “a” and “on”, and words that described the bake itself like “cake” and “pie”. Finally, I divided by the total number of signature and showstopper bakes in all seasons (1391 in total!) to get the percentage of bakes that contained a given word in their title. Here’s what I found:</p>
+<p><iframe src="barPlot.html" scrolling="no" seamless="seamless" frameBorder="0" width="100%" height="300"></iframe></p>
+<p>Un-surprising, the most popular ingredient was <strong>CHOCOLATE</strong>.</p>
+<iframe src="https://giphy.com/embed/kWEwk57Tz6jXa" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen>
+</iframe>
+<p>
+<a href="https://giphy.com/gifs/chocolate-love-gif-kWEwk57Tz6jXa">via GIPHY</a>
+</p>
+<p>Mmmmmm…..</p>
+<p>It’s worth noting that the text-mining method I used is imperfect. For example, a “black forest” cake contains both cherry and chocolate, so if the title of the bake contained “black forest” rather than the words “chocolate” and “cherry”, then this bake would not count towards the total count of bakes flavored with chocolate.</p>
+<p>Nonetheless, the results made me curious to know:</p>
+<blockquote>
+<p><strong>Does using each of popular flavorings give the bakers an advantage?</strong></p>
+</blockquote>
+<p>We can think about this question in two ways. I’ll use chocolate as an example to make this simpler, but the same questions could be asked for each ingredient:</p>
+<ol style="list-style-type: decimal">
+<li>Is the risk of getting eliminated <em>lower</em> if the baker uses chocolate in either their signature bake?</li>
+<li>Is the chance of getting star baker <em>higher</em> if the baker uses chocolate in either of their bakes?</li>
+</ol>
+<p>To visualize the answers to question #1, I calculated a “risk ratio”. In short, I first calculated the risk of being eliminated when using chocolate as the number of bakers eliminated in episode where they used chocolate divided by the total number of chances for elimination. I then divided this the overall risk of getting eliminated, regardless of chocolate use. Values greater than 1 indicate that bakers are were <em>more</em> likely to be eliminated if they used chocolate, whereas values less than 1 indicate that they are <em>less</em> likely to be eliminated if they used chocolate. Here’s what I found for all the ingredients.</p>
+<p><iframe src="barPlot.html" scrolling="no" seamless="seamless" frameBorder="0" width="100%" height="300"></iframe></p>

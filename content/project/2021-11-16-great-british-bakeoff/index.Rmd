@@ -3,7 +3,7 @@ author: Libby Mohr
 categories:
 date: "2021-11-15"
 draft: false
-excerpt: Analysis and visualization of Great British Bake-off data
+excerpt: How to win the Great-British bakeoff
 layout: single
 links:
 - icon: github
@@ -16,9 +16,17 @@ tags:
 title: Great British Bake-off
 ---
 
-```{r}
+As someone who doesn't care much for cake or reality-television, I was admittedly skeptical when friends raved about the Great British Bake Off. When I watched it, though, I found it hard not be taken by the quirky British humor, the camaraderie among bakers, and the shared struggle to make some complicated baked good in some ridiculously-short time period. Needless to say I was delighted when I stumbled upon the [bakeoff](https://bakeoff.netlify.app/index.html) package, which enables easy access to some of the show's data from R.  
+
+The first question I sought to answer was:   
+
+>**What are the most commonly-used flavorings in the signature and showstopper bakes?**
+
+To answer this question, I determined which words appeared most commonly in the titles of signature and showstopper bakes from all 10 seasons of the show. I then excluded words that didn't pertain to flavor: common words like "a" and "on", and words that described the bake itself like "cake" and "pie". Finally, I divided by the total number of signature and showstopper bakes in all seasons (1391 in total!) to get the percentage of bakes that contained a given word in their title. Here's what I found: 
+
+```{r, echo = FALSE}
 htmltools::tags$iframe(
-  src = "test.html",
+  src = "barPlot.html",
   scrolling = "no", 
   seamless = "seamless", 
   frameBorder = "0",
@@ -26,3 +34,36 @@ htmltools::tags$iframe(
   height = "300"
 )
 ```
+
+Un-surprising, the most popular ingredient was **CHOCOLATE**.  
+
+<iframe src="https://giphy.com/embed/kWEwk57Tz6jXa" width="480" height="256" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/chocolate-love-gif-kWEwk57Tz6jXa">via GIPHY</a></p>
+
+
+Mmmmmm.....
+
+It's worth noting that the text-mining method I used is imperfect. For example, a "black forest" cake contains both cherry and chocolate, so if the title of the bake contained "black forest" rather than the words "chocolate" and "cherry", then this bake would not count towards the total count of bakes flavored with chocolate. 
+
+Nonetheless, the results made me curious to know: 
+
+>**Does using each of popular flavorings give the bakers an advantage?**
+
+We can think about this question in two ways. I'll use chocolate as an example to make this simpler, but the same questions could be asked for each ingredient: 
+
+1. Is the risk of getting eliminated *lower* if the baker uses chocolate in either their signature bake? 
+2. Is the chance of getting star baker *higher* if the baker uses chocolate in either of their bakes? 
+
+To visualize the answers to question #1, I calculated a "risk ratio". In short, I first calculated the risk of being eliminated when using chocolate as the total number of times that a baker used chocolate and was eliminated divided by the total number of times a baker used chocolate in an episode, regardless of elimination status. I then divided this risk by the overall risk of getting eliminated, regardless of chocolate use. Values greater than 1 indicate that bakers are were *more* likely to be eliminated if they used chocolate, whereas values less than 1 indicate that they are *less* likely to be eliminated if they used chocolate. Here's what I found for all the ingredients. 
+
+```{r, echo = FALSE}
+htmltools::tags$iframe(
+  src = "barPlot.html",
+  scrolling = "no", 
+  seamless = "seamless", 
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
