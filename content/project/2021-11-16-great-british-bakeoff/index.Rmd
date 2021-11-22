@@ -56,9 +56,9 @@ We can think about this question in two ways. I'll use chocolate as an example t
 1. Is the risk of getting eliminated *lower* if the baker uses chocolate in either their signature or showstopper bake? 
 2. Is the chance of getting star baker *higher* if the baker uses chocolate in either of their bakes? 
 
-To visualize the answers to question #1, I calculated a "risk ratio". In short, I first calculated the risk of being eliminated when using chocolate as the total number of times that a baker used chocolate and was eliminated divided by the total number of times a baker used chocolate in an episode, regardless of elimination status. I then divided this risk by the risk of getting eliminated when *not* using chocolate. Values greater than 1 indicate that bakers are were *more* likely to be eliminated if they used chocolate, whereas values less than 1 indicate that they are *less* likely to be eliminated if they used chocolate. 
+To visualize the answers to question #1, I calculated a "risk ratio". In short, I first calculated the risk of being eliminated when using chocolate as the total number of times that a baker used chocolate and was eliminated divided by the total number of times a baker used chocolate in an episode, regardless of elimination status. I then divided this risk by the risk of getting eliminated when *not* using chocolate, calculated in a similar fashion. Values greater than 1 indicate that a baker is *more* likely to be eliminated if they use chocolate, whereas values less than 1 indicate that they are *less* likely to be eliminated if they used chocolate. 
 
-Similarly, to address question #2, I calculated a "reward ratio". Values greater than 1 indicate that the change of getting star baker is *higher* if you use chocolate, whereas values less than 1 indicate that the chance of getting star baker is *lower*. Here's what I found for all the ingredients. 
+Similarly, to address question #2, I calculated a "reward ratio". In this case, values greater than 1 indicate that the chance of getting star baker is *higher* if a baker uses use chocolate, whereas values less than 1 indicate that the chance of getting star baker is *lower*. Here's what I found for all the ingredients. 
 
 ```{r, echo = FALSE}
 htmltools::tags$iframe(
@@ -111,6 +111,6 @@ htmltools::tags$iframe(
 These plots demonstrate that there's a fair bit of uncertainty surrounding our findings.
 Still, there is relatively strong visual evidence that both **fruit**, **orange**, and **walnut** are likely to increase a baker's chance of being eliminated relative to not using those flavors, whereas **almond**, **pistachio** and **lemon** appear to decrease a baker's chance of being eliminated. On the star baker side of things, **lemon** and **cherry** seem to decrease a baker's chance of winning star baker, whereas **caramel** may increase a baker's likelihood of winning star baker (though the evidence is rather weak). When it comes to the most popular ingredient (chocolate), there's not strong evidence that using it either hurts or helps bakers.
 
-In the end, there's still lots more to explore. Do certain judges prefer certain ingredients? How does a baker's performance in the technical challenge affect all of this?  For now, I'll have to leave those questions for another day.
+In the end, there's still lots more to explore. How does a baker's performance in the technical challenge affect all of this? Is the risk of using certain flavors different when Mary judges compared to when Prue judges?  For now, I'll have to leave those questions for another day.
 
 
