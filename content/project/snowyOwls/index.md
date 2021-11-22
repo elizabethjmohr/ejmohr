@@ -26,19 +26,36 @@ I wanted to visualize the irruptions that have occurred in the recent past, so I
 
 *Figure 1: Density of snowy owl observations reported on eBird during winter, 2009-2021.*
 
-This set of maps shows that some of the highest numbers of reported sightings occurred during the 2013-2104, 2014-2015, 2017-2018, and 2020-2021 migration seasons. Further, the 2011-2012 2017-2018 seasons saw higher numbers of sightings in the southern part of the study.
+This set of maps shows that some of the highest numbers of reported sightings occurred during the 2013-2104, 2014-2015, 2017-2018, and 2020-2021 migration seasons. Further, the 2011-2012 and 2017-2018 seasons saw higher numbers of sightings in the southern part of the study area.
 
 ## Caveat
 
-At the point, you might be thinking.
+At the point, you might be thinking,
 
 > Wait a second, how do we know that the high number of snowy owls sightings aren't an artifact of birding activity in that state? In other words, shouldn't we expect more reported snowy owl sightings if everyone in the state were just birding non-stop? 
 
-Well golly, we should account for that. Luckily, eBird also provides data on the total number of "checklists", where each checklist corresponds to a birding sessions in a given location. This allows us to account for both the number of birders in each state and how often they go birding in order to determine if the patterns we're observing are due to snowy owl behavior rather than human birder behavior. Let's visualize locations of snowy owl observations (green) alongside all birding sessions. [^3]
+Well golly, we should account for that. Luckily, eBird also provides data on the total number of "checklists", where each checklist corresponds to a birding sessions in a given location. Let's take a quick gander at the per-capita number of birding checklists for each state in the Midwest and Northeast.
 
-<iframe src="sightings.png" width = "100%" height = 500 seamless = "seamless" frameBorder = "0"> </iframe>
+<iframe src="lineChart.html" width = "100%" height = 500 seamless = "seamless" frameBorder = "0"> </iframe>
 
-*Figure 2: Snowy owl sightings report on eBird during winter, 2009-2021. Sightings are more concentrated in areas with higher concentrations of birding activity or eBird checklists.*
+*Figure 2: Number of eBird checklists (birding sessions) per 1,000 residents, 2010-2019*
+
+The number of checklists per year is rising for all states, indicating one or more of the following: 
+  1. more people have started birding
+  2. existing birders have started getting out more
+  3. more people are reporting their birding observations on eBird
+  
+Also, Vermont and Maine are dominating in the per capita checklist count arena.  Unfortunately, this makes it a bit hard to compare states other than Vermont and Maine in the chart above. The heat map table below provides an alternative visualization of the same data.
+
+<iframe src="heatmap.html" width = "100%" height = 500 seamless = "seamless" frameBorder = "0"> </iframe>
+
+*Figure 3: Number of eBird checklists (birding sessions) per 1,000 residents, 2010-2019*
+
+All in all, the checklist data allows us to account for the number of birders in each state, how often they go birding, and how often they report their sightings on eBird. This then allows us to determine if the patterns we're observing are due to snowy owl behavior rather than human birder behavior. Let's visualize locations of snowy owl observations (green) alongside all birding sessions. [^3]
+
+<iframe src="sightings.png" width = "100%" height = 400 seamless = "seamless" frameBorder = "0"> </iframe>
+
+*Figure 4: Snowy owl sightings report on eBird during winter, 2009-2021. Sightings are more concentrated in areas with higher concentrations of birding activity or eBird checklists.*
 
 It's apparent that many of the snowy owl sightings occur along the east coast and shores of the Great Lakes and often overlap with areas that have more birding activity (i.e.areas where grey dots are dense). Still, some areas with high birding activity have relatively lower numbers of snowy owl sightings - take St.Louis, MO, for example, or even the inland areas of the eastern US. On the flip side, northwestern North Dakota has a relatively high number of snowy owl sightings relative to the amount of birding activity. 
 
@@ -46,9 +63,9 @@ We can again now summarize these data taking the number of owl observations in a
 
 <iframe src="chloropleth2.png" width = "100%" height = 550 seamless = "seamless" frameBorder = "0"> </iframe>
 
-*Figure 3: Proportion of birding outings reported on eBird where a snowy owl was observed, 2009-2021.*
+*Figure 5: Proportion of birding outings reported on eBird where a snowy owl was observed, 2009-2021.*
 
-This set of maps tells a slightly different story than the previous set. First, the 2011-2012, 2013-2014, and 2017-2018 migration seasons stand out as the most "irruptive". During these years, the percentage of birding outings that resulted in a snowy owl sighting was non-zero in all states[^4] and much higher relative to other years. In contrast to the first set of maps, this set of maps suggests that North Dakota would be a great place to go in the winter if you wanted to see a snowy owl in any given year [^5]. This was not apparent in Figure 1 because the data in that figure don't account for the fact that there isn't a whole lot of birding activity in North Dakota. Finally, while the 2020-2021 wasn't a "bad" year for owl sightings, it doesn't appear quite as "good" as some past seasons where migration was more irruptive. This wasn't obvious in Figure 1, where the observations per unit area metric doesn't account for higher amounts of birding during that season (pandemic birding, anyone?). 
+This set of maps tells a slightly different story than the previous set. First, the 2011-2012, 2013-2014, and 2017-2018 migration seasons stand out as the most "irruptive". During these years, the percentage of birding outings that resulted in a snowy owl sighting was non-zero in all states[^4] and much higher relative to other years. In contrast to the first set of maps, this set of maps suggests that North Dakota would be a great place to go in the winter if you wanted to see a snowy owl in any given year [^5]. This was not apparent in Figure 1 because the area-normalized observation counts in that figure don't account for the fact that there isn't a whole lot of birding activity in North Dakota. Finally, while the 2020-2021 wasn't a "bad" year for owl sightings, it doesn't appear quite as "good" as some past seasons where migration was more irruptive. This wasn't obvious in Figure 1, where the observations per unit area metric doesn't account for higher amounts of birding during that season (pandemic birding, anyone?). 
 
 
 [^1]: eBird Basic Dataset. Version: EBD_relOct-2021. Cornell Lab of Ornithology, Ithaca, New York. Oct 2021.

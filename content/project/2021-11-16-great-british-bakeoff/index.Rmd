@@ -1,9 +1,9 @@
 ---
 author: Libby Mohr
 categories:
-date: "2021-11-15"
+date: "2021-11-17"
 draft: false
-excerpt: How to win the Great-British bakeoff
+excerpt: How to win the Great-British bakeoff...
 layout: single
 links:
 - icon: github
@@ -22,7 +22,7 @@ The first question I sought to answer was:
 
 >**What are the most commonly-used flavorings in the signature and showstopper bakes?**
 
-To answer this question, I determined which words appeared most commonly in the titles of signature and showstopper bakes from all 10 seasons of the show. I then excluded words that didn't pertain to flavor: common words like "a" and "on", and words that described the bake itself like "cake" and "pie". Finally, I divided by the total number of signature and showstopper bakes in all seasons (1391 in total!) to get the percentage of bakes that contained a given word in their title. Here's what I found: 
+To answer this question, I determined which words appeared most commonly in the titles of signature and showstopper bakes from all 10 seasons of the show. I then excluded words that didn't pertain to flavor: common words like "a" and "on", and words that described the bake itself like "cake" and "pie". Finally, I divided by the total number of signature and showstopper bakes in all seasons (1,391 in total!) to get the percentage of bakes that contained a given word in their title. Here's what I found: 
 
 ```{r, echo = FALSE}
 htmltools::tags$iframe(
@@ -34,6 +34,9 @@ htmltools::tags$iframe(
   height = "300"
 )
 ```
+
+
+*Figure 1: The thirteen most commonly-used flavors in the the Great British Bake Off. Frequency of use is expressed as a total percentage of signature and showstopper bakes containing the flavor.*
 
 Un-surprising, the most popular ingredient was **CHOCOLATE**.  
 
@@ -46,26 +49,68 @@ It's worth noting that the text-mining method I used is imperfect. For example, 
 
 Nonetheless, the results made me curious to know: 
 
->**Does using each of popular flavorings either hurt or help the bakers?**
+>**Does using each of popular flavorings hurt or help the bakers?**
 
-We can think about this question in two ways. I'll use chocolate as an example to make this simpler, but the same questions could be asked for each ingredient: 
+We can think about this question in two ways. I'll use chocolate as an example to simplify things, but the same questions could be asked for each ingredient: 
 
 1. Is the risk of getting eliminated *lower* if the baker uses chocolate in either their signature or showstopper bake? 
 2. Is the chance of getting star baker *higher* if the baker uses chocolate in either of their bakes? 
 
-To visualize the answers to question #1, I calculated a "risk ratio". In short, I first calculated the risk of being eliminated when using chocolate as the total number of times that a baker used chocolate and was eliminated divided by the total number of times a baker used chocolate in an episode, regardless of elimination status. I then divided this risk by the risk of getting eliminated when *not* using chocolate. Values greater than 1 indicate that bakers are were *more* likely to be eliminated if they used chocolate, whereas values less than 1 indicate that they are *less* likely to be eliminated if they used chocolate. Here's what I found for all the ingredients. 
+To visualize the answers to question #1, I calculated a "risk ratio". In short, I first calculated the risk of being eliminated when using chocolate as the total number of times that a baker used chocolate and was eliminated divided by the total number of times a baker used chocolate in an episode, regardless of elimination status. I then divided this risk by the risk of getting eliminated when *not* using chocolate. Values greater than 1 indicate that bakers are were *more* likely to be eliminated if they used chocolate, whereas values less than 1 indicate that they are *less* likely to be eliminated if they used chocolate. 
 
-Similarly, to address question #2, I calculated a "reward ratio".
+Similarly, to address question #2, I calculated a "reward ratio". Values greater than 1 indicate that the change of getting star baker is *higher* if you use chocolate, whereas values less than 1 indicate that the chance of getting star baker is *lower*. Here's what I found for all the ingredients. 
 
 ```{r, echo = FALSE}
 htmltools::tags$iframe(
-  src = "barPlot.html",
+  src = "ratioPlots.png",
   scrolling = "no", 
   seamless = "seamless", 
   frameBorder = "0",
   width = "100%",
-  height = "300"
+  height = "400"
 )
 ```
+*Figure 2. Relative risk and reward associated with using the 13 most-popular flavors in a round of the Great British Bake-off. For each flavor, a risk ratio greater than one means that a baker is more likely to be eliminated if they use the flavor compared to not using the flavor. A reward ratio greater than one means that a baker is more likely to win "star baker" if they use the flavor, compared to not using the flavor.*
+
+We can interpret these results by placing flavors into one of four categories:
+
+|Relative risk of elimination|Relative chance of star baker|Takeaway|Flavors|
+|:-----|:-----|:-----|:-----|
+|Lower|Higher|Use if you want to win|None!|
+|Higher|Higher|Use if you're willing to take a risk to get star baker|Orange, apple, caramel, walnut|
+|Lower|Lower|Use if you want to play it safe|Chocolate, lemon, raspberry, almond, pistachio, cherry|
+|Higher|Lower|Don't use if you want to win|Ginger, fruit, cheese|
+
+Before we go too far interpreting these findings though, it's worth asking: 
+
+> How likely is it that these results occurred by chance? 
+
+In other words, how certain can we be that if we ran another 10 seasons of the show that we would find the same thing? To visualize the answer to this question without actually running 10 more seasons of the Great British Bakeoff, I "re-sampled" the data by randomly choosing 704 rows to create a simulated dataset the same size as the original one. This data set ends up being different than the original one, because every time a row is randomly selected it goes back into the mix of rows that can be chosen. I performed this re-sampling procedure several times in order to produce several simulated datasets. Finally, I calculated the risk and reward ratios for each simulated dataset. Here's an animation that loops through results for each simulated dataset: 
+
+![](new_gif.gif)
+
+
+*Figure 3. Animated illustration of the uncertainty in relative risk and reward associated with using the 13 most-popular flavors in a round of the Great British Bake-off. Each frame of the animation corresponds to the risk and reward ratios from a simulated data set generated by resampling the original data.*
+
+In case that makes your head spin, here's a static plot showing 100 simulated outcomes as points, along with bars representing the ratios calculated from the original dataset.
+
+```{r, echo = FALSE}
+htmltools::tags$iframe(
+  src = "staticHOP.png",
+  scrolling = "no", 
+  seamless = "seamless", 
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
+
+
+*Figure 4. Static illustration of the uncertainty in relative risk and reward associated with using the 13 most-popular flavors in a round of the Great British Bake-off. Each point corresponds to the risk and reward ratios from a simulated data set generated by re-sampling the original data. Bars correspond to the risk and reward ratios calculated from the original dataset.*
+
+These plots demonstrate that there's a fair bit of uncertainty surrounding our findings.
+Still, there is relatively strong visual evidence that both **fruit**, **orange**, and **walnut** are likely to increase a baker's chance of being eliminated relative to not using those flavors, whereas **almond**, **pistachio** and **lemon** appear to decrease a baker's chance of being eliminated. On the star baker side of things, **lemon** and **cherry** seem to decrease a baker's chance of winning star baker, whereas **caramel** may increase a baker's likelihood of winning star baker (though the evidence is rather weak). When it comes to the most popular ingredient (chocolate), there's not strong evidence that using it either hurts or helps bakers.
+
+In the end, there's still lots more to explore. Do certain judges prefer certain ingredients? How does a baker's performance in the technical challenge affect all of this?  For now, I'll have to leave those questions for another day.
 
 
