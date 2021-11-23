@@ -21,7 +21,13 @@ I should admit outright that my interest in snowy owls was initially spurred by 
 
 ## Sightings 
 I wanted to visualize the irruptions that have occurred in the recent past, so I got some observation data from 
-[eBird](https://ebird.org/home) [^1], a platform for birders to track and share their observations. For each migration season (October - April) from 2009-2020, I determined the number of snowy owl sightings reported on eBird for each state in the Midwestern and Northeastern United States. I then divided by the area of each state to get the number of sightings per 100 km<sup>2</sup>.
+[eBird](https://ebird.org/home) [^1], a platform for birders to track and share their observations. 
+
+<iframe src="interactiveSightingsWI.html" width = "100%" height = 500 seamless = "seamless" frameBorder = "0"> </iframe>
+
+
+
+For each migration season (October - April) from 2009-2020, I determined the number of snowy owl sightings reported on eBird for each state in the Midwestern and Northeastern United States. I then divided by the area of each state to get the number of sightings per 100 km<sup>2</sup>.
 <iframe src="chloropleth1.png" width = 100% height = 550 seamless = "seamless" frameBorder = "0"> </iframe>
 
 *Figure 1: Density of snowy owl observations reported on eBird during winter, 2009-2021.*
