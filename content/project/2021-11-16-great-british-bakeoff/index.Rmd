@@ -62,7 +62,7 @@ Similarly, to address question #2, I calculated a "reward ratio". In this case, 
 
 ```{r, echo = FALSE}
 htmltools::tags$iframe(
-  src = "ratioPlots.png",
+  src = "ratioPlots_annotated.png",
   scrolling = "no", 
   seamless = "seamless", 
   frameBorder = "0",
@@ -96,7 +96,7 @@ In case that makes your head spin, here's a static plot showing 100 simulated ou
 
 ```{r, echo = FALSE}
 htmltools::tags$iframe(
-  src = "staticHOP.png",
+  src = "staticHOP_annotated.png",
   scrolling = "no", 
   seamless = "seamless", 
   frameBorder = "0",

@@ -62,7 +62,7 @@ All in all, the checklist data allows us to account for the number of birders in
 
 <iframe src="sightings.png" width = "100%" height = 380 seamless = "seamless" frameBorder = "0"> </iframe>
 
-*Figure 5: Snowy owl sightings report on eBird during winter, 2009-2021. Sightings are more concentrated in areas with higher concentrations of birding activity or eBird checklists.*
+*Figure 5: Snowy owl sightings reported on eBird during winter migration seasons from 2009-2021. Sightings are more concentrated in areas with higher concentrations of birding activity or eBird checklists.*
 
 It's apparent that many of the snowy owl sightings occur along the east coast and shores of the Great Lakes and often overlap with areas that have more birding activity (i.e.areas where grey dots are dense). Still, some areas with high birding activity have relatively lower numbers of snowy owl sightings - take St.Louis, MO, for example, or even the inland areas of the eastern US. On the flip side, northwestern North Dakota has a relatively high number of snowy owl sightings relative to the amount of birding activity. 
 
