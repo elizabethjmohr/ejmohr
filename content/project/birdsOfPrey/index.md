@@ -20,7 +20,10 @@ As a recent transplant to Madison, WI I wanted to get a handle on the birding sc
 
 Check out the map below, making sure to toggle through the different species in the top right corner!
 
+<figure>
 <iframe src="map.html" width = "100%" height = "400"> </iframe>
+<figcaption align = "center"> <b> Figure 1. </b> An interactive map of predatory bird sightings from 2010-2021. Circles indicate that a bird has been seen within a 55 acre rectangular area centered at the circle. Circle size is proportional to the number of sightings. The number of sightings pops up when a mouse hovers over the circle. </figcaption>
+</figure>
 
 There's a few interesting trends: 
 1. Most of the peregrine falcon sightings are near downtown Madison on the isthmus; they're city slickers!
