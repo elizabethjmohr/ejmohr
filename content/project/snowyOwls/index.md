@@ -21,10 +21,10 @@ I should admit outright that my interest in snowy owls was initially spurred by 
 
 ## Sightings 
 I wanted to visualize the irruptions that have occurred in the recent past, so I got some observation data from 
-[eBird](https://ebird.org/home) [^1], a platform for birders to track and share their observations. I started by visualizing snowy owl observations for each migration season (October - April) from 2009-2020 in Wisconsin. 
+[eBird](https://ebird.org/home) [^1], a platform for birders to track and share their observations. I started by visualizing snowy owl observations for each migration season (October - April) from 2009-2020 in Wisconsin [^6]. 
 
 <figure>
-<iframe src= "interactiveSightingsWI.html" width = "100%" height = 360 seamless = "seamless" frameBorder = "0" > </iframe>
+<iframe src= "interactiveSightingsWI.html" width = "100%" height = 475 seamless = "seamless" frameBorder = "0" > </iframe>
 
 <figcaption align = "center"><b>Figure 1.</b> Snowy owl observations reported on eBird in Wisconsin for migrations seasons from 2009-2020. Hover over the bar for any migration to see which observations happened in that season!</figcaption>
 </figure>
@@ -47,7 +47,7 @@ At the point, you might be thinking,
 Well golly, we should account for that. Luckily, eBird also provides data on the total number of "checklists", where each checklist corresponds to a birding sessions in a given location. Let's take a quick gander at the per-capita number of birding checklists for each state in the Midwest and Northeast.
 
 <figure>
-<iframe src="checklistCountsInt.html" width = "100%" height = 440 seamless = "seamless" frameBorder = "0"> </iframe>
+<iframe src="checklistCountsInt.html" width = "100%" height = 480 seamless = "seamless" frameBorder = "0"> </iframe>
 <figcaption align = "center"><b>Figure 3.</b> Number of eBird checklists (birding sessions) per 1,000 residents, 2010-2019. </figcaption>
 </figure>
 
@@ -63,10 +63,10 @@ Also, Vermont and Maine are dominating in the per capita checklist count arena. 
 <figcaption align = "center"><b>Figure 4.</b> Number of eBird checklists (birding sessions) per 1,000 residents, 2010-2019. </figcaption>
 </figure>
 
-All in all, the checklist data allows us to account for the number of birders in each state, how often they go birding, and how often they report their sightings on eBird. This then allows us to determine if the patterns we're observing are due to snowy owl behavior rather than human birder behavior. Let's visualize locations of snowy owl observations (green) alongside all birding sessions. [^3]
+All in all, the checklist data allows us to account for the number of birders in each state, how often they go birding, and how often they report their sightings on eBird. This then allows us to determine if the patterns we're observing are due to snowy owl behavior rather than human birder behavior. Let's visualize locations of snowy owl observations (blue) alongside all birding sessions. [^3]
 
 <figure>
-<iframe src="sightings.png" width = "100%" height = 380 seamless = "seamless" frameBorder = "0"> </iframe>
+<iframe src="sightings.png" width = "100%" height = 460 seamless = "seamless" frameBorder = "0"> </iframe>
 <figcaption align = "center"><b>Figure 5.</b> Snowy owl sightings reported on eBird during winter migration seasons from 2009-2021. Sightings are more concentrated in areas with higher concentrations of birding activity or eBird checklists. </figcaption>
 </figure>
 
@@ -83,6 +83,7 @@ This set of maps tells a slightly different story than the previous set. First, 
 
 
 [^1]: eBird Basic Dataset. Version: EBD_relOct-2021. Cornell Lab of Ornithology, Ithaca, New York. Oct 2021.
+[^6]:Inspired by [this map](https://labs.waterdata.usgs.gov/visualizations/gages-through-the-ages/index.html#/)
 [^2]: Technically, we divide by the number of "complete" checklists, or those where the birder recorded every species that they observed. This also means we need to restrict observation counts to those from complete checklists.   
 [^3]: Inspired by [this map](https://cornelllabofornithology.github.io/ebird-best-practices/ebird.html#ebird-explore)
 [^4]: Except Nebraska, 2013-2014
