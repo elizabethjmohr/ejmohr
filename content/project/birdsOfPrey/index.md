@@ -3,7 +3,7 @@ author: Libby Mohr
 categories:
 date: "2021-11-15"
 draft: false
-excerpt: Where do the birds of prey hang out in Madison, WI? 
+excerpt: Where are birds of prey sighted in Madison, WI? 
 layout: single
 links:
 - icon: github

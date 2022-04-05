@@ -3,7 +3,7 @@ author: Libby Mohr
 categories:
 date: "2021-11-17"
 draft: false
-excerpt: How to win the Great-British bakeoff...
+excerpt: An analysis of the most popular and most successful flavors
 layout: single
 links:
 - icon: github

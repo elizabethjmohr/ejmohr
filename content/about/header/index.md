@@ -7,5 +7,5 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-I'm a Ph.D. candidate at Montana State University studying biogeochemical cycling in streams and rivers. My dissertation research is focused on understanding controls on network-scale nutrient cycling by linking empirical data with models of water movement and biogeochemical cycling.
+I'm a Ph.D. candidate at Montana State University studying biogeochemical cycling in streams and rivers. My research is focused on understanding controls on network-scale nutrient cycling by linking empirical data with models of water movement and biogeochemical cycling.
 

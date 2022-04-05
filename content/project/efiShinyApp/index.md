@@ -3,8 +3,7 @@ author: Libby Mohr
 categories:
 date: "2020-09-01"
 draft: false
-excerpt: I worked with 4 other students in the Ecological Forecasting Initiative (EFI) to build an interactive map with all EFI members using RShiny.
-
+excerpt: A team effort to build an interactive map of Ecological Forecasting Initiative members using RShiny.
 layout: single
 links:
 - icon: map-marked

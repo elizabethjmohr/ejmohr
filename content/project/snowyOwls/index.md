@@ -3,7 +3,7 @@ author: Libby Mohr
 categories:
 date: "2021-11-19"
 draft: false
-excerpt: This one's for you, Hedwig
+excerpt: Visualizing the most irruptive migration seasons
 layout: single
 links:
 - icon: github
@@ -13,11 +13,11 @@ links:
 subtitle: 
 tags:
 - hugo-site
-title: Snowy Owls and Irruptive Migration
+title: Snowy Owls 
 ---
 
 ## Background
-I should admit outright that my interest in snowy owls was initially spurred by reading and watching Harry Potter as a child. Hedwig is a loyal companion and a hero and there's no denying it. Fictional stories aside, the snowy owl is a fascinating species. In contrast other owl species, snowy owls tend to be active during daylight hours. In the summer, the birds breed in the high Arctic. Some stay in the Arctic for the winter, whereas others regularly migrate south to Canada and the northern US. However, snowy owl migration patterns are considered "irruptive"; in some years the birds migrate further South in much larger numbers than normal. I find it particularly intriguing that reasons for these irruptions is still not well understood. 
+The snowy owl is a fascinating species. In contrast other owl species, snowy owls tend to be active during daylight hours. In the summer, the birds breed in the high Arctic. Some stay in the Arctic for the winter, whereas others regularly migrate south to Canada and the northern US. However, snowy owl migration patterns are considered "irruptive"; in some years the birds migrate further South in much larger numbers than normal for reasons that are still not well understood. 
 
 ## Sightings 
 I wanted to visualize the irruptions that have occurred in the recent past, so I got some observation data from 
