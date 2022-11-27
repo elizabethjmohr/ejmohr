@@ -113,11 +113,6 @@ enableEmoji = true
     url = "/project/"
     weight = 2
   [[menu.header]]
-    name = "Talks"
-    title = "Talks"
-    url = "/talk/"
-    weight = 3
-  [[menu.header]]
     name = "Contact"
     title = "Contact form"
     url = "/contact/"
