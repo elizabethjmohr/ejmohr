@@ -16,6 +16,7 @@ tags:
 title: Great British Bake-off
 ---
 
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
 <p>As someone who doesn’t care much for cake or reality-television, I was admittedly skeptical when friends raved about the Great British Bake Off. When I watched it, though, I found it hard not be taken by the quirky British humor, the camaraderie among bakers, and the shared struggle to make some complicated baked good in some ridiculously-short time period. Needless to say I was delighted when I stumbled upon the <a href="https://bakeoff.netlify.app/index.html">bakeoff</a> package, which enables easy access to some of the show’s data from R.</p>
@@ -25,7 +26,7 @@ title: Great British Bake-off
 </blockquote>
 <p>To answer this question, I determined which words appeared most commonly in the titles of signature and showstopper bakes from all 10 seasons of the show. I then excluded words that didn’t pertain to flavor: common words like “a” and “on”, and words that described the bake itself like “cake” and “pie”. Finally, I divided by the total number of signature and showstopper bakes in all seasons (1,391 in total!) to get the percentage of bakes that contained a given word in their title. Here’s what I found:</p>
 <figure>
-<p><iframe src="barPlot.html" scrolling="no" seamless="seamless" frameBorder="0" width="100%" height="300"></iframe></p>
+<iframe src="barPlot.html" scrolling="no" seamless="seamless" frameBorder="0" width="100%" height="300"></iframe>
 <figcaption align="center">
 <b>Figure 1.</b> The thirteen most commonly-used flavors in the the Great British Bake Off. Frequency of use is expressed as the percentage of all signature and showstopper bakes containing the flavor.
 </figcaption>
